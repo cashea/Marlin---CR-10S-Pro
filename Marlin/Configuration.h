@@ -84,7 +84,7 @@
 #define STRING_CONFIG_H_AUTHOR "Teflon, CR10-S - BLTouch"                 // Who made the changes.
 #define SHOW_BOOTSCREEN
 #define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION // will be shown during bootup in line 1
-#define STRING_SPLASH_LINE2 https://github.com/cashea/Marlin---CR-10S-Pro-BLTouch-Micro-SwissHotend // will be shown during bootup in line 2
+#define STRING_SPLASH_LINE2 "https://github.com/cashea/Marlin---CR-10S-Pro-BLTouch-Micro-SwissHotend" // will be shown during bootup in line 2
 
 /**
  * *** VENDORS PLEASE READ ***
@@ -782,8 +782,8 @@
  *    (0,0)
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER -25 // X offset: -left  +right  [of the nozzle]
-#define Y_PROBE_OFFSET_FROM_EXTRUDER 2.1   // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER 1.28 // Z offset: -below +above  [the nozzle]
+#define Y_PROBE_OFFSET_FROM_EXTRUDER 2   // Y offset: -front +behind [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER 1 // Z offset: -below +above  [the nozzle]
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
@@ -1105,7 +1105,7 @@
  * Add a bed leveling sub-menu for ABL or MBL.
  * Include a guided procedure if manual probing is enabled.
  */
-#define LCD_BED_LEVELING
+//#define LCD_BED_LEVELING
 
 #if ENABLED(LCD_BED_LEVELING)
   #define MBL_Z_STEP 0.025    // Step size while manually probing Z axis.
